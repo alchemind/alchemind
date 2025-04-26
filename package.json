@@ -1,0 +1,10 @@
+{
+  "name": "@alchemind/alchemind",
+  "description": "Local-first, end-to-end encrypted note-taking app",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "bun@1.2.10",
+  "workspaces": [
+    "packages/*"
+  ]
+}
