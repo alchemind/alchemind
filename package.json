@@ -12,12 +12,20 @@
     "check": "turbo run check",
     "lint": "turbo run lint",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "nano-staged": "^0.8.0",
     "prettier": "3.5.3",
     "prettier-plugin-svelte": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "turbo": "^2.5.2"
+  },
+  "nano-staged": {
+    "**/*.{html,yaml,json,css,md,mdx,js,cjs,mjs,ts}": [
+      "prettier --write"
+    ]
   }
 }
