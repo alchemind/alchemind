@@ -2,18 +2,18 @@
  * @type {import('prettier').Config}
  */
 export default {
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
+  arrowParens: "avoid",
+  endOfLine: "lf",
   printWidth: 100,
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: "all",
   useTabs: false,
-  plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-svelte'],
+  plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-svelte"],
   overrides: [
     {
-      files: '*.svelte',
+      files: "*.svelte",
       options: {
-        parser: 'svelte',
+        parser: "svelte",
       },
     },
   ],
