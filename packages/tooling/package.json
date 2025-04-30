@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./tsconfig-base": "./ts-configs/tsconfig-base.json"
+    "./tsconfig-base": "./ts-configs/tsconfig-base.json",
+    "./eslint-svelte": "./eslint-configs/eslint-svelte.config.mjs"
   }
 }
