@@ -1,0 +1,13 @@
+# Ignore files for PNPM, NPM, YARN and BUN
+pnpm-lock.yaml
+pnpm-workspace.yaml
+package-lock.json
+yarn.lock
+bun.lock
+
+# Tauri app
+packages/app/build
+packages/app/.svelte-kit
+packages/app/package
+packages/app/vite.config.js.timestamp-*
+packages/app/vite.config.ts.timestamp-*

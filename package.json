@@ -3,8 +3,17 @@
   "description": "Local-first, end-to-end encrypted note-taking app",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "bun@1.2.10",
+  "packageManager": "bun@1.2.11",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.5.3",
+    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
 }
