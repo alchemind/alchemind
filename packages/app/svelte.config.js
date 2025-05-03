@@ -9,6 +9,10 @@ const config = {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter(),
+    alias: {
+      "@/*": "./src/lib/*",
+      "@alchemind/ui/*": "../../packages/ui/src/*",
+    },
   },
 };
 

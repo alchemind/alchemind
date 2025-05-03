@@ -1,0 +1,12 @@
+{
+  "extends": "@alchemind/tooling/tsconfig-base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@alchemind/ui": ["./src"],
+      "@alchemind/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/node_modules/**"]
+}

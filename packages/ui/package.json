@@ -1,0 +1,45 @@
+{
+  "name": "@alchemind/ui",
+  "description": "Reusable shadcn/ui components for Alchemind",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "ui": "bun x shadcn-svelte@next"
+  },
+  "devDependencies": {
+    "@alchemind/tooling": "*",
+    "@eslint/compat": "^1.2.9",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "bits-ui": "^1.4.3",
+    "clsx": "^2.1.1",
+    "eslint": "^9.25.1",
+    "eslint-plugin-svelte": "^3.5.1",
+    "globals": "^16.0.0",
+    "svelte": "^5.28.2",
+    "svelte-check": "^4.1.6",
+    "tailwind-merge": "^3.2.0",
+    "tailwind-variants": "^1.0.0",
+    "tailwindcss": "4.0.7",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "^1.2.8",
+    "typescript-eslint": "^8.31.1"
+  },
+  "exports": {
+    "./components/*": {
+      "types": "./src/components/**/*.ts",
+      "svelte": "./src/components/**/*.ts",
+      "default": "./src/components/**/*.ts"
+    },
+    "./hooks/*": {
+      "types": "./src/hooks/**/*.ts",
+      "svelte": "./src/hooks/**/*.ts",
+      "default": "./src/hooks/**/*.ts"
+    },
+    "./utils.js": "./src/utils.ts",
+    "./global.css": "./src/global.css"
+  }
+}
